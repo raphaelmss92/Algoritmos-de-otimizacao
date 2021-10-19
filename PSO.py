@@ -1,20 +1,21 @@
 import numpy as np
 
 class PSO(object):
-    '''
-    PSO -> Particle Swarm Optimization (Otimização por nuvem de partículas)
-    n_cand: Número de soluções candidatas
-    dim: Dimensão do problema de otimização
-    lim_inf: Limite inferior dos valores do problema de otimização [colocar como numpy array]
-    lim_sup: Limite superior dos valores do problems de otimização [colocar como numpy array]
-    n_iter: Número de iterações
-    f_custo: Função custo
-    c1 e c2: Parâmetros cognitivo e social (o quanto vão em direção do melhor custo pessoal e o melhor custo global)
-    w_min e w_max: Parâmetros que definem a inercia da partícula, decaindo do valor máximo ao mínimo.
-    '''
+    
     def __init__(self, n_cand, dim, lim_inf, lim_sup, n_iter, f_custo, c1=2, c2=2, w_min=0.4, w_max=0.6):
         
-        # Parâmetros de otimização
+        '''
+        PSO -> Particle Swarm Optimization (Otimização por nuvem de partículas)
+        n_cand: Número de soluções candidatas
+        dim: Dimensão do problema de otimização
+        lim_inf: Limite inferior dos valores do problema de otimização [colocar como numpy array]
+        lim_sup: Limite superior dos valores do problems de otimização [colocar como numpy array]
+        n_iter: Número de iterações
+        f_custo: Função custo
+        c1 e c2: Parâmetros cognitivo e social (o quanto vão em direção do melhor custo pessoal e o melhor custo global)
+        w_min e w_max: Parâmetros que definem a inercia da partícula, decaindo do valor máximo ao mínimo.
+        '''
+        
         self.n_cand = n_cand
         self.dim = dim
         self.lim_inf = lim_inf
