@@ -1,16 +1,18 @@
 import numpy as np
 
 class TLBO(object):
-    """
-    n_cand: Número de soluções candidatas
-    n_iters: Número de iterações
-    lim_inf: Limite inferior das soluções
-    lim_sup: Limite superior das soluções
-    dim: Dimensão do problema de otimização
-    f_custo: Função custo da otimização
-    verbose: Se a otimização deve apresentar resultados em tempo real [True/False]
-    """
+
     def __init__(self, n_cand, n_iters, dim, lim_inf, lim_sup, f_custo, verbose):
+	
+	'''
+	n_cand: Número de soluções candidatas
+	n_iters: Número de iterações
+	lim_inf: Limite inferior das soluções
+	lim_sup: Limite superior das soluções
+	dim: Dimensão do problema de otimização
+	f_custo: Função custo da otimização
+	verbose: Se a otimização deve apresentar resultados em tempo real [True/False]
+	'''
 
         self.n_cand = n_cand
         self.n_iters = n_iters
