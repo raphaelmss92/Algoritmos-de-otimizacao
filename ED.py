@@ -3,18 +3,19 @@ import numpy as np
 
 class ED(object):
 		
-	'''
-	ED: Evolução diferencial
-	tam_pop: Número de soluções candidatas
-	dim: Dimensão do problema de otimização	
-	n_ger: Número de gerações/iterações da otimização
-	prob_mut: Probabilidade de mutação
-	min_vals: Limite inferior das soluções candidatas a otimização
-	max_vals: Limite superior das soluções candidatas a otimização
-	f_custo: Função custo
-	'''
-		
 	def __init__(self, tam_pop, dim, n_ger, prob_mut, min_vals, max_vals, f_custo):
+		
+		'''
+		ED: Evolução diferencial
+		tam_pop: Número de soluções candidatas
+		dim: Dimensão do problema de otimização	
+		n_ger: Número de gerações/iterações da otimização
+		prob_mut: Probabilidade de mutação
+		min_vals: Limite inferior das soluções candidatas a otimização
+		max_vals: Limite superior das soluções candidatas a otimização
+		f_custo: Função custo
+		'''
+		
 		self.tam_pop = tam_pop		# Tamanho da população
 		self.prob_mut = prob_mut        # Probabilidade de mutação
 		self.n_ger = n_ger		# Número de gerações
